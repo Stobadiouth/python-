@@ -1,0 +1,8 @@
+HOST='localhost'
+PORT=5000
+DEBUG=True
+SECRET_KEY='123456'
+USER='root'
+PASSWORD='123456'
+PORT1=3306
+DB='jobapp'

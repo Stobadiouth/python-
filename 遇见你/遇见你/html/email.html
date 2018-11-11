@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        div{
+            box-sizing: border-box;
+        }
+        .message{
+            width: 70%;
+            height: 600px;
+            margin: auto;
+            border: 1px grey solid;
+        }
+        .left{
+            min-height: 100%;
+            padding: 0;
+            overflow-y:auto;
+            background: rgba(214, 214, 214, 0.48);
+        }
+        .left>div{
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px grey solid;
+        }
+        .left>div span{
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+        .blue{
+            background: lightpink!important;
+        }
+        .right{
+            min-height: 100%;
+            overflow-y: auto;
+        }
+        .friend>div{
+            margin-top: 20px;
+            background: rgba(173, 216, 230, 0.39);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px;
+        }
+        .friend button{
+            margin-left: 10px;
+            width: 80px;
+            height: 25px;
+            background: white;
+        }
+        .friend>div div{
+            text-align: right;
+        }
+        .email{
+            min-height: 450px;
+            overflow-y: auto;
+        }
+        .email>div{
+            margin-top: 20px;
+        }
+        .email>div span{
+            font-size: small;
+            margin-left: 10px;
+            color: grey;
+        }
+        .email>div p{
+            background: rgba(221, 221, 221, 0.55);
+            padding: 5px;
+            word-wrap:break-word;
+            word-break:break-all;
+            overflow: hidden;
+        }
+        .reply{
+            height: 150px;
+        }
+        .reply div{
+            margin-top: 10px;
+            text-align: right;
+        }
+        .reply button{
+            background: #D86EA3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row message">
+            <div class="col-md-4 left pre-scrollable">
+                <div class="blue">
+                    <span>所有消息</span>
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                </div>
+                <div>
+                    <span>验证消息</span>
+                    <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                </div>
+                <div>
+                    <span>用户123</span>
+                    <span class="glyphicon glyphicon-trash"></span>
+                </div>
+            </div>
+            <div class="col-md-8 right">
+                <div class="friend" style="display: none">
+                    <div>
+                        <span>用户1234567</span>&nbsp;<span>请求添加你为好友</span>
+                        <div><button>同意</button><button>拒绝</button></div>
+                    </div>
+                    <div>
+                        <span>用户1234567</span>&nbsp;<span>请求添加你为好友</span>
+                        <div><button>同意</button><button>拒绝</button></div>
+                    </div>
+                </div>
+                <div class="email pre-scrollable">
+                    <div>
+                        <h4>姓名<span>时间</span></h4>
+                        <p>消息内容</p>
+                    </div>
+                    <div>
+                        <h4>姓名<span>时间</span></h4>
+                        <p>消息内容</p>
+                    </div>
+                </div>
+                <div class="reply">
+                    <textarea class="form-control" rows="4"></textarea>
+                    <div><button class="btn">回复</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

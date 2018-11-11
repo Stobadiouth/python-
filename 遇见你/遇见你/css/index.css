@@ -1,0 +1,204 @@
+body,ul,li,table,div,a,input{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: solid underline white !important;
+}
+li{
+    list-style: none;
+    background: rgba(255,0,0,0);
+    float: left;
+}
+
+/*         header           */
+.header{
+    height: 32px;
+    background: #F23A6E;
+}
+.log-reg{
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+}
+.log-reg a{
+    color: white!important;
+}
+
+/*--------neck--------*/
+.nav-head div{
+    height:50px;
+}
+.logo{
+    width: 30%;
+    height: 80%;
+    margin-top: 5px;
+}
+.logo-text{
+    width: 50%;
+    height: 60%;
+    margin-top: 10px;
+}
+.nav-head div{
+    text-align: center;
+    line-height: 50px;
+}
+.nav-head div a{
+    color: black;
+    font-size: 1.2em;
+}
+.nav-head div a:hover{
+    color: #F23A6E;
+}
+
+.blue-line{
+    background: rgba(0, 0, 228, 0.28);
+    height: 1px;
+}
+/*--------middle-------*/
+.middle{
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    background: url("../images/index_imges/爱心.png");
+    background-size: contain;
+}
+.middle .left-search{
+    width: 80%;
+    height: 50px;
+    border: solid 5px #F23A6E;
+    background: white;
+    margin-top: 100px;
+}
+.left-search input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+.left-btn{
+    width: 20%;
+    height: 50px;
+    background: #F23A6E;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    border: none;
+    margin-top: 100px;
+}
+.middle .left-hot{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.left-hot li{
+    margin-right: 20px;
+}
+.left-hot a{
+    color: black;
+}
+.left-hot a:hover{
+    color: #F23A6E;
+}
+
+.right-login{
+    height: 140px;
+    width: 190px;
+    margin: auto;
+    margin-top: 60px;
+    background: rgba(255, 0, 0, 0.15);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right-login button{
+    border: solid 1px lightpink;
+    padding: 0;
+    width: 70px;
+    height: 30px;
+    background: rgba(173, 216, 230, 0.31);
+    color: black;
+}
+
+/*-----------css----------*/
+.main{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: url("../images/index_imges/樱花2.png");
+    background-position:570px 600px;
+}
+
+.main-title li{
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+.main-title li a{
+    font-size: 0.8em;
+    color: rgba(49, 24, 76, 0.7);
+    font-weight: bold;
+}
+
+.list div{
+    padding: 0;
+    margin: 20px 20px 40px 20px;
+    width: 190px;
+    height:290px;
+    box-shadow: 2px 2px 2px 2px #ff7976;
+}
+
+.list>div img{
+    width: 100%;
+    height: 100%;
+}
+.list>div span{
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(165, 165, 165, 0.25);
+}
+
+.show{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+.show>div{
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(106, 147, 190, 0.57);
+}
+.show img{
+    width: 100%;
+    height: 100%;
+}
+.show .row>div{
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+/*************bottom***************/
+.bottom{
+    width: 100%;
+    height: 140px;
+    background: url("../images/index_imges/樱花2.png");
+    /*background-position: 600px 200px;*/
+    margin-top: 100px;
+}
+.bottom div{
+    font-size: 0.8em;
+    text-align: center;
+}
+.bottom>div a{
+    color: grey;
+}
+.bottom>div a:hover{
+    color: orangered;
+}

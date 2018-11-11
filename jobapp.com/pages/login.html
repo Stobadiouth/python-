@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        * { margin: 0px; padding: 0px;}
+        .top{
+            background: #00b38a;
+            width: 100%;
+            height: 400px;
+        }
+        .top img { margin-top: 80px; margin-left: 100px;}
+
+
+        .main{
+            width: 550px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            margin-top: -200px;
+            box-sizing: border-box;
+        }
+
+        .main .tx {
+            width: 270px;
+            height: 40px;
+            background-color: #f8f8f8;
+            border: none;
+            margin-top: 10px;
+
+            position: relative;
+            top:50px;
+            left: 100px;
+            padding-left: 30px;
+        }
+
+        .main span {
+            color: red;
+            font-size: 12px;
+            position: relative;
+            top:50px;
+            left: 120px;
+        }
+
+
+        .main #btn {
+            width:300px;
+            height:40px;
+            background-color:#00b38a;
+            position:relative;
+            top:100px;
+            left:100px;
+            border:none;
+            font-size: 20px;
+            color: white;
+            font-family: "黑体";
+            letter-spacing: 8px;
+        }
+
+        .main .wenzi {
+            color:#7f7777;
+            position:relative;
+            top:120px;
+            left:150px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="../images/logo.png" />
+        </div>
+
+        <div class="main">
+            <form id="loginform">
+
+            <p><input type="text" placeholder="请输入已验证手机" name="telephone" value="15776554504" class="tx" id="tel" />
+                <br>
+
+                <span id="error">
+                </span>
+            </p>
+
+            <p><input type="password" placeholder="请输入密码" name="password"  value="123456" class="tx" id="pwd"/>
+                <br>
+
+                <span id="errorp">
+
+                </span>
+            </p>
+
+            <p><input type="button" id="btn" value="登录"> </p>
+
+            <p class="wenzi">还没有账号？<a href="regist.html">立即注册</a>
+                <img src="../images/login_icon-arrow-right.png" /></p>
+            </form>
+        </div>
+
+
+    </div>
+
+    <!--<script src="../js/utils.js"></script>-->
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $('#btn').click(function () {
+            tel=$('#tel').val();
+            pwd=$('#pwd').val();
+            user={
+                "tel":tel,
+                "pwd":pwd
+            };
+            console.log(user);
+            $.ajax({
+                url:'http://localhost:8000/user/login/',
+                type:"POST",
+                headers: {
+                    Accept: "application/json; charset=utf-8",
+                    token:"1111111111111111"
+                },
+                data:JSON.stringify(user),
+                dataType:"json",
+                contentType:"application/json",
+                success:function (response,textStatus,xhr) {
+
+                    console.log(response);
+                    console.log(textStatus);
+                    // console.log(request.getAllResponseHeaders())
+                    console.log(xhr.getResponseHeader('token'))
+                },
+                error:function (XMLHttpRequest,textStatus,errorThrown) {
+                    console.log('nononon');
+                    console.log(textStatus)
+                }
+            })
+        })
+    </script>
+    <!--<script>-->
+
+        <!--var btn_login=document.querySelector('#btn');-->
+        <!--btn_login.onclick=function () {-->
+            <!--var tel=document.querySelector('#tel');-->
+            <!--var pwd=document.querySelector('#pwd');-->
+            <!--var user={-->
+                <!--"tel":tel.value,-->
+                <!--"pwd":pwd.value-->
+            <!--};-->
+            <!--ajax('POST','http://localhost:8000/user/login/',user,function (result) {-->
+                <!--console.log(result);-->
+                <!--if(result && result.statusCode=='201'){-->
+                    <!--//将登录信息和token放到sessionStorage中存储-->
+                    <!--let token=result.token;-->
+                    <!--console.log(token);-->
+                    <!--sessionStorage.setItem('telephone',result.tel);-->
+                    <!--sessionStorage.setItem('token',token);-->
+                    <!--if (sessionStorage.getItem('from')) {-->
+                        <!--location.href=sessionStorage.getItem('from')-->
+                    <!--}else {-->
+                        <!--location.href='../index.html';-->
+                    <!--}-->
+
+                <!--}else {-->
+                    <!--document.querySelector('#errorp').innerText='用户名或密码错误';-->
+                    <!--tel.focus();-->
+                <!--}-->
+            <!--},'111111111111111')-->
+
+        <!--}-->
+    <!--</script>-->
+</body>
+</html>
+
+
+
+

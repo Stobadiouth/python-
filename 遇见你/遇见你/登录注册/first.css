@@ -1,0 +1,220 @@
+body,ul,li,p,a,div,h2,h3,span,hr{
+    margin: 0;
+    padding:0;
+}
+.header{
+    width: 100%;
+    height: 736px;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/bj.jpg");
+}
+.zhuti{
+    position: relative;
+    width: 430px;
+    height: 432px;
+    top: 77px;
+    right: -200px;
+}
+.div01{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: rgba(91, 91, 91, 0.54);
+    box-shadow: 0 2px 11px 0 rgba(0,0,0,0.5);
+    padding: 0 30px;
+    position: relative;
+}
+.regist{
+    color: white;
+    line-height: 86px;
+    text-align: center;
+    height: 80px;
+    border-bottom: 1px solid beige;
+    font-style: italic;
+    font-size: 20px;
+}
+.information{
+    padding-top: 20px;
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+.sex{
+    float: left;
+    color: white;
+}
+.man{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: white;
+}
+.birth{
+    color: white;
+    margin-top: 5px;
+}
+.year{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.month{
+    margin-left: 6px;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.day{
+    margin-left: 6px;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+ .date{
+    margin: auto;
+    display: flex;
+     margin-top: 30px;
+}
+.birth{
+    color: white;
+    margin-top: 5px;
+}
+.year{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.month{
+    margin-left: 14px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.day{
+    margin-left: 14px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.work{
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+.direct{
+    color: white;
+    margin-top: 5px;
+}
+.province{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    background-color: rgba(113, 106, 97, 0.66);
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.city{
+    margin-left: 14px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgba(113, 106, 97, 0.66);
+    color: black;
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.district{
+    margin-left: 14px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgba(113, 106, 97, 0.66);
+    color: black;
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.marry{
+    padding-top: 40px;
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+.free{
+    margin: auto;
+    width: 400px;
+    height: 50px;
+}
+.free1{
+    width: 400px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgba(113, 106, 97, 0.66);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遇见你</title>
+    <link rel="stylesheet" href="../css/search.css">
+    <!--最新版本的 Bootstrap 核心 CSS 文件-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3 log-reg">
+                <a href="#">登录</a>/
+                <a href="#">注册</a>
+            </div>
+        </div>
+        <div class="row nav-head">
+            <div class="col-md-4">
+                <a href="index.html"><img src="../images/index_imges/love.png" alt="" class="logo"></a>
+                <img src="../images/index_imges/11(1).jpg" alt="" class="logo-text">
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-1"><a href="">首页</a></div>
+            <div class="col-md-1"><a href="">搜索</a></div>
+            <div class="col-md-1"><a href="">个人中心</a></div>
+            <div class="col-md-1"><a href="">论坛</a></div>
+            <div class="col-md-1"><a href="">服务</a></div>
+        </div>
+    </div>
+    <div class="blue-line"></div>
+</div>
+
+    <div class="container">
+            <div class="row search">
+                <div class="col-md-9">
+                    <p>选择条件：</p>
+                    <form class="form-inline" role="form">
+                        <select id="sex" class="form-control">
+                            <option value="0">女</option>
+                            <option value="1">男</option>
+                        </select>
+                        <select id="age" class="form-control">
+                            <option value="">年龄</option>
+                            <option value="1">25岁以下</option>
+                            <option value="2">25-35岁</option>
+                            <option value="3">35-45岁</option>
+                            <option value="3">45岁以上</option>
+                        </select>
+
+                        <select id="s_province1" name="s_province" class="form-control"></select>
+                        <select id="s_city1" name="s_city"  class="form-control"></select>
+                        <select id="edu" class="form-control">
+                            <option value="">学历</option>
+                            <option value="1">高中及以下</option>
+                            <option value="2">中专</option>
+                            <option value="3">大专</option>
+                            <option value="4">本科</option>
+                            <option value="5">硕士</option>
+                            <option value="6">博士</option>
+                        </select>
+                        <select id="income" class="form-control">
+                            <option value="">年收入</option>
+                            <option value="1">1-5万元</option>
+                            <option value="2">5-10万元</option>
+                            <option value="3">10-15万元</option>
+                            <option value="4">15-20万元</option>
+                            <option value="5">20-35万元</option>
+                            <option value="6">35万元以上</option>
+                        </select>
+                        <select id="height" class="form-control">
+                            <option value="">身高</option>
+                            <option value="1">150cm以下</option>
+                            <option value="2">150-160cm</option>
+                            <option value="3">160-165cm</option>
+                            <option value="4">165-170cm</option>
+                            <option value="5">170-175cm</option>
+                            <option value="6">175-180cm</option>
+                            <option value="6">180-190cm</option>
+                            <option value="6">190cm以上</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn" type="submit">搜索</button>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="row">
+                    <li>排序方式：</li>
+                    <li>默认</li>
+                    <li>年龄<img src="../images/search/down.svg" ></li>
+                    <li>收入<img src="../images/search/down.svg"></li>
+                    <li>身高<img src="../images/search/down.svg"></li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-2 pin">
+                        <img src="../images/index_imges/1.jpg" alt="">
+                        <div class="name">昵称</div>
+                        <div class="message">
+                            <span>年龄</span>
+                            <span>居住地</span>
+                        </div>
+                        <div class="db">
+                            <p>爱情宣言</p>
+                            <p>Ta很懒，什么都没留下</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pin">
+                        <img src="../images/index_imges/2.jpg" alt="">
+                        <div class="name">昵称</div>
+                        <div class="message">
+                            <span>年龄</span>
+                            <span>居住地</span>
+                        </div>
+                        <div class="db">
+                            <p>爱情宣言：</p>
+                            <p>Ta很懒，什么都没留下</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pin">
+                        <img src="../images/index_imges/3.jpg" alt="">
+                        <div class="name">昵称</div>
+                        <div class="message">
+                            <span>年龄</span>
+                            <span>居住地</span>
+                        </div>
+                        <div class="db">
+                            <p>爱情宣言：</p>
+                            <p>Ta很懒，什么都没留下</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pin">
+                        <img src="../images/index_imges/4.jpg" alt="">
+                        <div class="name">昵称</div>
+                        <div class="message">
+                            <span>年龄</span>
+                            <span>居住地</span>
+                        </div>
+                        <div class="db">
+                            <p>爱情宣言：</p>
+                            <p>Ta很懒，什么都没留下</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pin">
+                        <img src="../images/index_imges/5.jpg" alt="">
+                        <div class="name">昵称</div>
+                        <div class="message">
+                            <span>年龄</span>
+                            <span>居住地</span>
+                        </div>
+                        <div class="db">
+                            <p>爱情宣言：</p>
+                            <p>Ta很懒，什么都没留下</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <nav class="pages">
+                <ul class="pagination">
+                    <li>上一页</li>
+                    <li class="page-active">1</li>
+                    <li>2</li>
+                    <li>下一页</li>
+                </ul>
+            </nav>
+        </div>
+    <div class="container-fluid bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <p>简介</p>
+                    <a href=""><p>关于我们</p></a>
+                    <a href=""><p>服务声明</p></a>
+                    <a href=""><p>媒体报道</p></a>
+                </div>
+                <div class="col-md-3">
+                    <p>合作</p>
+                    <a href=""><p>加入我们</p></a>
+                    <a href=""><p>联系我们</p></a>
+                    <a href=""><p>友情链接</p></a>
+                </div>
+                <div class="col-md-3">
+                    <p>帮助</p>
+                    <a href=""><p>帮助中心</p></a>
+                    <a href=""><p>常见问题</p></a>
+                    <a href=""><p>新手引导</p></a>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/shenshi.js"></script>
+        <script>_init_area1()</script>
+        <script src="../js/search.js"></script>
+</body>
+</html>

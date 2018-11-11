@@ -1,0 +1,66 @@
+body,ul,li,p,a,div,h2,h3,span,hr{
+    margin: 0;
+    padding:0;
+}
+.container-fluid{
+    background:url("../images/login_regist_images/001.png") ;
+    height: 700px;
+    padding: 0;
+}
+
+
+.regist{
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 600px;
+    border-radius: 2px;
+    background-color: rgba(122, 85, 74, 0.31);
+    box-shadow: 0 0 6px 0 #f1f1f1;
+    height: 550px;
+}
+
+.title{
+    font-weight: bold;
+    font: 18px/53px 'Microsoft Yahei';
+    color:#f3316b;
+    text-align: center;
+}
+.title-tips {
+    color: #3c3c3c;
+    height: 37px;
+    line-height: 37px;
+    background-color: rgba(112, 126, 119, 0.44);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sex{
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 80px;
+}
+
+.regist-input{
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 80px;
+}
+.regist-input input{
+    background-color: rgba(112, 126, 119, 0.44);
+    margin-left: 20px;
+}
+
+#imgsure{
+    height: 35px;
+}
+
+.div-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+.btn{
+    width: 350px;
+    background-color:#845779;
+    color: black;
+    font-size: 18px!important;
+}

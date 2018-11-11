@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/regist.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body >
+
+    <div class="container-fluid">
+       <div class="regist">
+           <div class="title">还等什么呢？抓紧谈恋爱吧！</div>
+           <div class="title-tips">别忘了一定要填写真实信息哦</div>
+           <div class="row sex">
+               <div class="col-md-2">性别</div>
+               <div class="col-md-1"></div>
+               <div class="col-md-8">
+                   <label class="radio-inline">
+                       <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"><img src="../images/login_regist_images/男.png">
+                   </label>
+                   <label class="radio-inline">
+                       <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0"><img src="../images/login_regist_images/女.png" >
+                   </label>
+               </div>
+           </div>
+           <div class="row regist-input">
+               <div class="col-md-2">手机号</div>
+               <div class="col-md-8">
+                   <input type="text" class="form-control" id="telephone" aria-describedby="inputSuccess2Status" placeholder="请输入手机号">
+                   <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+               </div>
+           </div>
+           <div class="row regist-input">
+               <div class="col-md-2">验证码</div>
+               <div class="col-md-5">
+                   <input type="text" class="form-control" id="yzm" aria-describedby="inputSuccess2Status" placeholder="输入验证码">
+               </div>
+               <div class="col-md-3" id="imgsure"></div>
+           </div>
+           <div class="row regist-input">
+               <div class="col-md-2">密码</div>
+               <div class="col-md-8">
+                   <input type="password" class="form-control" id="password" aria-describedby="inputSuccess2Status" placeholder="请输入密码">
+                   <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+               </div>
+           </div>
+           <div class="row regist-input">
+               <div class="col-md-2">确认密码</div>
+               <div class="col-md-8">
+                   <input type="text" class="form-control" id="password2" aria-describedby="inputSuccess2Status" placeholder="请确认密码">
+                   <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+               </div>
+           </div>
+           <div class="row div-btn">
+               <button class="btn">免费注册</button>
+           </div>
+       </div>
+    </div>
+
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/gVerify.js"></script>
+<script src="../js/regist.js"></script>
+</body>
+</html>

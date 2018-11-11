@@ -1,0 +1,196 @@
+body,ul,li,table,div,a,input{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: solid underline white;
+}
+
+li{
+    list-style: none;
+    background: rgba(255,0,0,0);
+    float: left;
+}
+.headerout{
+    width:100%;
+    height: 32px;
+    background: #F23A6E;
+}
+.headerout .header{
+    width:1002px;
+    height: 32px;
+    margin: auto;
+}
+.header .div-li01{
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    position: relative;
+    color:white;
+    cursor: pointer;
+}
+.header .div-01{
+    width: 140px;
+    height: 100%;
+    float: right;
+    text-align: center;
+    background: orange;
+    color: white;
+    display: table-cell;
+    line-height: 32px;
+    font-size: 0.8em;
+}
+
+/*--------neck--------*/
+.div-neckout{
+    width: 100%;
+    height: 55px;
+    border-bottom: solid 1px rgba(0, 0, 228, 0.28);
+}
+.div-neck{
+    width: 1002px;
+    height: 55px;
+    margin: auto;
+}
+
+.div-neck a{
+    color: black;
+}
+.div-neck a:hover{
+    color: orangered;
+}
+.div-neck .div-log{
+    width: 120px;
+    height: 100%;
+    float: left;
+}
+.div-neck .div-log img{
+    width: 110px;
+    height: 80%;
+    margin-top: 5px;
+}
+.div-neck .div-slog{
+    width: 175px;
+    height: 100%;
+    float: left;
+}
+.div-neck .div-slog img{
+    width: 90%;
+    height: 60%;
+    margin-top: 10px;
+}
+.div-neck .div-text{
+    width: 80px;
+    height: 100%;
+    float: right;
+    display: table-cell;
+    line-height: 55px;
+    margin-left: 10px;
+    text-align: center;
+    /*border: solid grey 1px;*/
+}
+.div-neck .div-index{
+    float: right;
+    width: 60px;
+    height: 100%;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.left{
+    margin-top: 20px;
+    height: 360px;
+}
+.right{
+    margin-top: 40px;
+    padding-left: 40px;
+}
+.div-name{
+    font-size: 1.5em;
+    color: #DD5092;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.div-id{
+    font-size: 1.2em;
+}
+.div-line{
+    width: 90%;
+    border-bottom: 1px dashed lightblue;
+}
+.under{
+    margin-top: 100px;
+}
+.div-col{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 1.5em;
+}
+
+.mybtn{
+    width: 185px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+.center{
+    margin-top: 20px;
+    width: 100%;
+    border-top: solid lightblue 1px;
+    height: 227px;
+}
+.div-orange{
+    background: #DD5092;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.center-right{
+    margin-top: 20px;
+}
+.center-right div{
+    margin-top: 20px;
+}
+.div-bottom{
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    background: rgba(106, 115, 95, 0.18);
+    padding-top: 80px;
+}
+.div-bottom .bottom{
+    width: 1002px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div-bottom .bottom div{
+    width: 100px;
+    height: 150px;
+    margin-left: 200px;
+    font-size: 0.8em;
+}
+.div-bottom .bottom>div a{
+    color: grey;
+}
+.div-bottom .bottom>div a:hover{
+    text-decoration: none;
+    color: orangered;
+}

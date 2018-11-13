@@ -1,0 +1,18 @@
+#查找一个有序数组元素的位置
+
+def division(li,i,left,right):
+#找到中间的数
+  mid=(left+right)//2
+  #左边大于右边
+  if left>right:
+    return -1
+  #这个数大于中间的数
+  if n>li[mid]:
+    left=mid+1
+  #这个数小于中间的数
+  if n<li[mid]:
+    right=mid-1
+  #等于中间的数
+  else:
+    return mid
+  return division(li,i,left,right)

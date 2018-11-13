@@ -3,6 +3,7 @@ def merge(li, low, mid, high):
     i = low
     j = mid + 1
     new_li = []
+    #如果左右都没遍历结束
     while i <= mid and j <= high:
         if li[i] < li[j]:
             new_li.append(li[i])
@@ -10,12 +11,15 @@ def merge(li, low, mid, high):
         else:
             new_li.append(li[j])
             j += 1
+    #右边先结束
     while i <= mid:
         new_li.append(li[i])
         i += 1
+     #左边先结束
     while j <= high:
         new_li.append(li[j])
         j += 1
+    #排序好的数列，放回原数组
     for i in range(low, high + 1):
         li[i] = new_li[i - low]
 

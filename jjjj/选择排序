@@ -1,0 +1,19 @@
+def choose_sort(li):
+    n = len(li)
+    i = 0
+    while i < n - 1:
+        j = i + 1
+        w = i
+        while j < n:
+            if li[w] > li[j]:
+                w = j
+            j += 1
+        li[i], li[w] = li[w], li[i]
+        i += 1
+
+import random
+
+li = [i for i in range(20)]
+random.shuffle(li)
+choose_sort(li)
+print(li)

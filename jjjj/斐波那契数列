@@ -9,3 +9,12 @@ class Feibo:
     def __next__(self):
         self.a,self.b=self.b,self.a+self.b
         return self.a
+#
+known={0:0,1:1}
+def fib(n):
+    if n in known:
+        return known[n]
+    else:
+        res=fib(n-1)+fib(n-2)
+        known[n]=res
+        return res
